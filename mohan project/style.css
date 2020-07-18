@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/mohan_home.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo{
+    width: 135px;
+    color: #f7e1ee;
+    font-weight: 600;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: #f7e1ee;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: #e8bcd6;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links .btn{
+    float: right;
+}
+.ins{
+    margin: 85px 140px;
+    color: azure;
+}
+.ins h1 span{
+    color: #e49dc6;
+}
+.bar{
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.icon{
+    height: 60%;
+    width: 80px;
+}
+.icon .fa{
+    margin: 50px 25px;
+    display: block;
+    color: burlywood;
+    font-size: 40px;
+    cursor: pointer;
+}
+.s-icon{
+    height: 35%;
+    width: 80px;
+    background:  #f3dfa7;
+    text-align: center;
+    padding-top: 25%;
+    bottom: 0;
+    position: absolute;
+}
+.s-icon .fa{
+    margin: 15px 25px;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 8px;
+   
+}
+.nav-bar .fa{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .bar {display: none;}
+    .ins {
+      margin: 80px 40px;
+    }
+    .ins h1{
+        font-size: 50px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: #e8bcd6;
+        margin: 10px 25px;
+        font-size: 22x;
+        cursor: pointer;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: .5s;
+    }
+    .nav-links ul a{
+        display: block;
+    }
+    .nav-links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+  }
